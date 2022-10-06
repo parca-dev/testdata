@@ -1,0 +1,18 @@
+=> Function start: 401120, Function end: 401146
+	(found 2 rows)
+	Loc: 401120 CFA: $rsp=8   	RBP: u
+	Loc: 401124 CFA: $rsp=8   	RBP: u
+=> Function start: 401150, Function end: 401155
+	(found 1 rows)
+	Loc: 401150 CFA: $rsp=8   	RBP: u
+=> Function start: 401020, Function end: 4010a0
+	(found 3 rows)
+	Loc: 401020 CFA: $rsp=16  	RBP: u
+	Loc: 401026 CFA: $rsp=24  	RBP: u
+	Loc: 401030 CFA: $rsp=24  	RBP: u
+=> Function start: 4010a0, Function end: 401115
+	(found 4 rows)
+	Loc: 4010a0 CFA: $rsp=8   	RBP: u
+	Loc: 4010a4 CFA: $rsp=48  	RBP: u
+	Loc: 40110f CFA: $rsp=8   	RBP: u
+	Loc: 401110 CFA: $rsp=48  	RBP: u
