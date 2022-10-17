@@ -7,7 +7,7 @@ build:
 	gcc src/basic-cpp-plt.cpp -o out/basic-cpp-plt
 	gcc src/basic-cpp.cpp -o out/basic-cpp-no-fp -fomit-frame-pointer
 
-validate: build
+validate:
 	$(EH_FRAME_BIN) --executable out/basic-cpp > tables/ours_basic-cpp.txt
 	$(EH_FRAME_BIN) --executable out/basic-cpp-plt > tables/ours_basic-cpp-plt.txt
 	$(EH_FRAME_BIN) --executable out/basic-cpp-no-fp > tables/ours_basic-cpp-no-fp.txt
