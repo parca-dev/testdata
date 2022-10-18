@@ -2,7 +2,7 @@
 	(found 3 rows)
 	Loc: 28000 CFA: $rsp=16  	RBP: u
 	Loc: 28006 CFA: $rsp=24  	RBP: u
-	Loc: 28010 CFA: $rsp=24  	RBP: u
+	Loc: 28010 CFA: exp     	RBP: u
 => Function start: 28380, Function end: 286f0
 	(found 1 rows)
 	Loc: 28380 CFA: $rsp=8   	RBP: u
@@ -1962,14 +1962,14 @@
 => Function start: 3e7f0, Function end: 3e880
 	(found 2 rows)
 	Loc: 3e7f0 CFA: $rsp=8   	RBP: u
-	Loc: 3e862 CFA: $rdi=0   	RBP: u
+	Loc: 3e862 CFA: $rdi=0   	RBP: $r9
 => Function start: 3e880, Function end: 3e88c
 	(found 1 rows)
 	Loc: 3e880 CFA: $rsp=8   	RBP: u
 => Function start: 3e890, Function end: 3e8e6
 	(found 2 rows)
 	Loc: 3e890 CFA: $rsp=8   	RBP: u
-	Loc: 3e8c8 CFA: $rdi=0   	RBP: u
+	Loc: 3e8c8 CFA: $rdi=0   	RBP: $r9
 => Function start: 3e8f0, Function end: 3e9a4
 	(found 4 rows)
 	Loc: 3e8f0 CFA: $rsp=8   	RBP: u
@@ -1991,7 +1991,7 @@
 	Loc: 3ea20 CFA: $rsp=8   	RBP: u
 => Function start: 3ea6f, Function end: 3ea79
 	(found 1 rows)
-	Loc: 3ea6f CFA: $rax=0   	RBP: u
+	Loc: 3ea6f CFA: exp     	RBP: exp
 => Function start: 3ea80, Function end: 3ec58
 	(found 4 rows)
 	Loc: 3ea80 CFA: $rsp=8   	RBP: u
@@ -23023,7 +23023,7 @@
 	Loc: 120d82 CFA: $rsp=8   	RBP: u
 	Loc: 120d85 CFA: $rsp=8   	RBP: u
 	Loc: 120d87 CFA: $rsp=8   	RBP: u
-	Loc: 120dc2 CFA: $rdi=0   	RBP: u
+	Loc: 120dc2 CFA: $rdi=0   	RBP: $r9
 => Function start: 120de0, Function end: 120dfb
 	(found 2 rows)
 	Loc: 120de0 CFA: $rsp=8   	RBP: u
