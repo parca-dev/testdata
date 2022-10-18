@@ -9631,7 +9631,7 @@
 	Loc: 182be30 CFA: $rsp=8   	RBP: u
 => Function start: 182be7f, Function end: 182be89
 	(found 1 rows)
-	Loc: 182be7f CFA: $rax=0   	RBP: u
+	Loc: 182be7f CFA: exp     	RBP: exp
 => Function start: 182be90, Function end: 182c068
 	(found 4 rows)
 	Loc: 182be90 CFA: $rsp=8   	RBP: u
@@ -16852,7 +16852,7 @@
 => Function start: 18a22d0, Function end: 18a2354
 	(found 2 rows)
 	Loc: 18a22d0 CFA: $rsp=8   	RBP: u
-	Loc: 18a2336 CFA: $rdi=0   	RBP: u
+	Loc: 18a2336 CFA: $rdi=0   	RBP: $r9
 => Function start: 18a2360, Function end: 18a2391
 	(found 4 rows)
 	Loc: 18a2360 CFA: $rsp=8   	RBP: u
@@ -19416,7 +19416,7 @@
 => Function start: 18d55b0, Function end: 18d5606
 	(found 2 rows)
 	Loc: 18d55b0 CFA: $rsp=8   	RBP: u
-	Loc: 18d55e8 CFA: $rdi=0   	RBP: u
+	Loc: 18d55e8 CFA: $rdi=0   	RBP: $r9
 => Function start: 18d5610, Function end: 18d56fb
 	(found 1 rows)
 	Loc: 18d5610 CFA: $rsp=8   	RBP: u
