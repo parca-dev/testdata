@@ -18,5 +18,6 @@ validate:
 	$(EH_FRAME_BIN) --executable vendored/parca-agent > tables/ours_parca-agent.txt
 	$(EH_FRAME_BIN) --executable vendored/ruby > tables/ours_ruby.txt
 	$(EH_FRAME_BIN) --executable vendored/libruby > tables/ours_libruby.txt
+	$(EH_FRAME_BIN) --executable vendored/redpanda > tables/ours_redpanda.txt
 
 all: validate
