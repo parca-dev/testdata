@@ -6,6 +6,7 @@ build:
 	gcc src/basic-cpp.cpp -o out/basic-cpp
 	gcc src/basic-cpp-plt.cpp -o out/basic-cpp-plt
 	gcc src/basic-cpp.cpp -o out/basic-cpp-no-fp -fomit-frame-pointer
+	gcc src/basic-cpp.cpp -o out/basic-cpp-no-fp-with-debuginfo -fomit-frame-pointer -g
 
 validate:
 	$(EH_FRAME_BIN) --executable out/basic-cpp > tables/ours_basic-cpp.txt
