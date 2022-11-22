@@ -2,7 +2,7 @@
 	(found 3 rows)
 	Loc: 33020 CFA: $rsp=16  	RBP: u
 	Loc: 33026 CFA: $rsp=24  	RBP: u
-	Loc: 33030 CFA: exp     	RBP: u
+	Loc: 33030 CFA: exp (plt 1)	RBP: u
 => Function start: 3cb30, Function end: 3cd03
 	(found 7 rows)
 	Loc: 3cb30 CFA: $rsp=8   	RBP: u
