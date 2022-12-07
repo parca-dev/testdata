@@ -1,65 +1,53 @@
 => Function start: 401040, Function end: 401066
-	(found 2 rows)
 	Loc: 401040 CFA: $rsp=8   	RBP: u
 	Loc: 401044 CFA: $rsp=8   	RBP: u
 => Function start: 401070, Function end: 401075
-	(found 1 rows)
 	Loc: 401070 CFA: $rsp=8   	RBP: u
 => Function start: 401020, Function end: 401040
-	(found 3 rows)
 	Loc: 401020 CFA: $rsp=16  	RBP: u
 	Loc: 401026 CFA: $rsp=24  	RBP: u
 	Loc: 401030 CFA: exp (plt 1)	RBP: u
 => Function start: 401126, Function end: 401147
-	(found 4 rows)
 	Loc: 401126 CFA: $rsp=8   	RBP: u
 	Loc: 401127 CFA: $rsp=16  	RBP: c-16 
 	Loc: 40112a CFA: $rbp=16  	RBP: c-16 
 	Loc: 401146 CFA: $rsp=8   	RBP: c-16 
 => Function start: 401147, Function end: 401168
-	(found 4 rows)
 	Loc: 401147 CFA: $rsp=8   	RBP: u
 	Loc: 401148 CFA: $rsp=16  	RBP: c-16 
 	Loc: 40114b CFA: $rbp=16  	RBP: c-16 
 	Loc: 401167 CFA: $rsp=8   	RBP: c-16 
 => Function start: 401168, Function end: 401173
-	(found 4 rows)
 	Loc: 401168 CFA: $rsp=8   	RBP: u
 	Loc: 401169 CFA: $rsp=16  	RBP: c-16 
 	Loc: 40116c CFA: $rbp=16  	RBP: c-16 
 	Loc: 401172 CFA: $rsp=8   	RBP: c-16 
 => Function start: 401173, Function end: 40117e
-	(found 4 rows)
 	Loc: 401173 CFA: $rsp=8   	RBP: u
 	Loc: 401174 CFA: $rsp=16  	RBP: c-16 
 	Loc: 401177 CFA: $rbp=16  	RBP: c-16 
 	Loc: 40117d CFA: $rsp=8   	RBP: c-16 
 => Function start: 40117e, Function end: 401189
-	(found 4 rows)
 	Loc: 40117e CFA: $rsp=8   	RBP: u
 	Loc: 40117f CFA: $rsp=16  	RBP: c-16 
 	Loc: 401182 CFA: $rbp=16  	RBP: c-16 
 	Loc: 401188 CFA: $rsp=8   	RBP: c-16 
 => Function start: 401189, Function end: 401194
-	(found 4 rows)
 	Loc: 401189 CFA: $rsp=8   	RBP: u
 	Loc: 40118a CFA: $rsp=16  	RBP: c-16 
 	Loc: 40118d CFA: $rbp=16  	RBP: c-16 
 	Loc: 401193 CFA: $rsp=8   	RBP: c-16 
 => Function start: 401194, Function end: 40119f
-	(found 4 rows)
 	Loc: 401194 CFA: $rsp=8   	RBP: u
 	Loc: 401195 CFA: $rsp=16  	RBP: c-16 
 	Loc: 401198 CFA: $rbp=16  	RBP: c-16 
 	Loc: 40119e CFA: $rsp=8   	RBP: c-16 
 => Function start: 40119f, Function end: 4011aa
-	(found 4 rows)
 	Loc: 40119f CFA: $rsp=8   	RBP: u
 	Loc: 4011a0 CFA: $rsp=16  	RBP: c-16 
 	Loc: 4011a3 CFA: $rbp=16  	RBP: c-16 
 	Loc: 4011a9 CFA: $rsp=8   	RBP: c-16 
 => Function start: 4011aa, Function end: 4011ce
-	(found 3 rows)
 	Loc: 4011aa CFA: $rsp=8   	RBP: u
 	Loc: 4011ab CFA: $rsp=16  	RBP: c-16 
 	Loc: 4011ae CFA: $rbp=16  	RBP: c-16 
