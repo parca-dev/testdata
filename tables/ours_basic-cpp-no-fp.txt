@@ -1,34 +1,23 @@
 => Function start: 401020, Function end: 401046
-	(found 2 rows)
 	Loc: 401020 CFA: $rsp=8   	RBP: u
 	Loc: 401024 CFA: $rsp=8   	RBP: u
 => Function start: 401050, Function end: 401055
-	(found 1 rows)
 	Loc: 401050 CFA: $rsp=8   	RBP: u
 => Function start: 401106, Function end: 401125
-	(found 1 rows)
 	Loc: 401106 CFA: $rsp=8   	RBP: u
 => Function start: 401125, Function end: 401144
-	(found 1 rows)
 	Loc: 401125 CFA: $rsp=8   	RBP: u
 => Function start: 401144, Function end: 40114a
-	(found 1 rows)
 	Loc: 401144 CFA: $rsp=8   	RBP: u
 => Function start: 40114a, Function end: 401150
-	(found 1 rows)
 	Loc: 40114a CFA: $rsp=8   	RBP: u
 => Function start: 401150, Function end: 401156
-	(found 1 rows)
 	Loc: 401150 CFA: $rsp=8   	RBP: u
 => Function start: 401156, Function end: 40115c
-	(found 1 rows)
 	Loc: 401156 CFA: $rsp=8   	RBP: u
 => Function start: 40115c, Function end: 401162
-	(found 1 rows)
 	Loc: 40115c CFA: $rsp=8   	RBP: u
 => Function start: 401162, Function end: 401168
-	(found 1 rows)
 	Loc: 401162 CFA: $rsp=8   	RBP: u
 => Function start: 401168, Function end: 401174
-	(found 1 rows)
 	Loc: 401168 CFA: $rsp=8   	RBP: u
