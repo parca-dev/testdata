@@ -1,0 +1,602 @@
+{
+  "Header": {
+    "Magic": 1248416836,
+    "Version": 1,
+    "TotalSize": 40,
+    "ElfMach": 62,
+    "Pad1": 0,
+    "Pid": 1,
+    "Timestamp": 33241207052497,
+    "Flags": 0
+  },
+  "CodeLoads": [
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 125,
+        "Timestamp": 33241207092788
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217675264,
+      "CodeAddr": 1217675264,
+      "CodeSize": 46,
+      "CodeIndex": 1,
+      "Name": "JIT$$interrupt_handler",
+      "Code": "TYk+SLgi7EEFiVUAAMYAAEi4I+xBBYlVAACAOAB0DEi4wMpRBIlVAAD/0EH/Jw=="
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 94,
+        "Timestamp": 33241207140161
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217675312,
+      "CodeAddr": 1217675312,
+      "CodeSize": 15,
+      "CodeIndex": 2,
+      "Name": "JIT$$exception_handler",
+      "Code": "SLhw8FgEiVUAAP/QQf8n"
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 121,
+        "Timestamp": 33241207145563
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217675328,
+      "CodeAddr": 1217675328,
+      "CodeSize": 36,
+      "CodeIndex": 3,
+      "Name": "JIT$$exception_handler_undef",
+      "Code": "SLhw7UEFiVUAAEiLAPZAHwZ0DItAEEHHRAYIAAAAAOnM////"
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 197,
+        "Timestamp": 33241207154144
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217675376,
+      "CodeAddr": 1217675376,
+      "CodeSize": 105,
+      "CodeIndex": 4,
+      "Name": "JIT$$exception_handler_free_op1_op2",
+      "Code": "QfZHHwZ0DUGLRxBBx0QGCAAAAABB9kcdBnQhQYtHCEwB8PZACQF0FEiLOIMvAXUMSLhQilIEiVUAAP/QQfZHHgZ0IUGLRwxMAfD2QAkBdBRIiziDLwF1DEi4UIpSBIlVAAD/0OlX////"
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 166,
+        "Timestamp": 33241207159431
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217675488,
+      "CodeAddr": 1217675488,
+      "CodeSize": 78,
+      "CodeIndex": 5,
+      "Name": "JIT$$exception_handler_free_op2",
+      "Code": "SLhw7UEFiVUAAEyLOEH2Rx8GdA1Bi0cQQcdEBggAAAAAQfZHHgZ0IUGLRwxMAfD2QAkBdBRIiziDLwF1DEi4UIpSBIlVAAD/0OkC////"
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 118,
+        "Timestamp": 33241207164285
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217675568,
+      "CodeAddr": 1217675568,
+      "CodeSize": 42,
+      "CodeIndex": 6,
+      "Name": "JIT$$leave_function",
+      "Code": "QYt+KPfHAAACAHUPSLgQdrDY738AAP/QQf8nSLjQd7DY738AAP/QQf8n"
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 108,
+        "Timestamp": 33241207168950
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217675616,
+      "CodeAddr": 1217675616,
+      "CodeSize": 35,
+      "CodeIndex": 7,
+      "Name": "JIT$$leave_throw",
+      "Code": "QYB/HJV0DUi4cO1BBYlVAABMiThJv3jtQQWJVQAA6a3+//8="
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 114,
+        "Timestamp": 33241207173652
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217675664,
+      "CodeAddr": 1217675664,
+      "CodeSize": 41,
+      "CodeIndex": 8,
+      "Name": "JIT$$icall_throw",
+      "Code": "TYs+QYB/HJV0DUi4cO1BBYlVAABMiThJv3jtQQWJVQAATYk+6Xf+//8="
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 182,
+        "Timestamp": 33241207179455
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217675712,
+      "CodeAddr": 1217675712,
+      "CodeSize": 96,
+      "CodeIndex": 9,
+      "Name": "JIT$$throw_cannot_pass_by_ref",
+      "Code": "SYsGi0gQQcdEDwgAAAAATTt+CHQMSYtOCEmJTzBNiX4ISYnHi3gMSLjPTSMEiVUAAP/QQYB/HQJ1IUGLRwhMAfD2QAkBdBRIiziDLwF1DEi4UIpSBIlVAAD/0OkQ/v//"
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 155,
+        "Timestamp": 33241207184893
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217675808,
+      "CodeAddr": 1217675808,
+      "CodeSize": 77,
+      "CodeIndex": 10,
+      "Name": "JIT$$undefined_offset",
+      "Code": "SIPsCEmLBotIEIB4HgFBx0QOCAEAAAB1CUhjSAxIAcjrBotADEwB8EjHxwIAAABIvnU8sdjvfwAASIsQSLiSfCIEiVUAAP/QSIPECMM="
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 158,
+        "Timestamp": 33241207189804
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217675888,
+      "CodeAddr": 1217675888,
+      "CodeSize": 81,
+      "CodeIndex": 11,
+      "Name": "JIT$$undefined_index",
+      "Code": "SIPsCEmLBotIEIB4HgFBx0QOCAEAAAB1CUhjSAxIAcjrBotADEwB8EjHxwIAAABIvlw8sdjvfwAASIsQSIPCGEi4knwiBIlVAAD/0EiDxAjD"
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 135,
+        "Timestamp": 33241207194617
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217675984,
+      "CodeAddr": 1217675984,
+      "CodeSize": 55,
+      "CodeIndex": 12,
+      "Name": "JIT$$cannot_add_element",
+      "Code": "SIPsCEmLBoB4HwB0DItAEEHHRAYIAQAAAEgx/0i+SGWx2O9/AABIuIeAIgSJVQAA/9BIg8QIww=="
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 89,
+        "Timestamp": 33241207198909
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217676048,
+      "CodeAddr": 1217676048,
+      "CodeSize": 8,
+      "CodeIndex": 13,
+      "Name": "JIT$$undefined_offset_ex",
+      "Code": "TYk+6Qj///8="
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 88,
+        "Timestamp": 33241207203031
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217676064,
+      "CodeAddr": 1217676064,
+      "CodeSize": 8,
+      "CodeIndex": 14,
+      "Name": "JIT$$undefined_index_ex",
+      "Code": "TYk+6Uj///8="
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 91,
+        "Timestamp": 33241207207148
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217676080,
+      "CodeAddr": 1217676080,
+      "CodeSize": 8,
+      "CodeIndex": 15,
+      "Name": "JIT$$cannot_add_element_ex",
+      "Code": "TYk+6Zj///8="
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 125,
+        "Timestamp": 33241207211820
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217676096,
+      "CodeAddr": 1217676096,
+      "CodeSize": 45,
+      "CodeIndex": 16,
+      "Name": "JIT$$undefined_function",
+      "Code": "SYsGSDH/SL4oZbHY738AAEhjUAxIixQQSIPCGEi4h4AiBIlVAAD/0OnD/P//"
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 116,
+        "Timestamp": 33241207216757
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217676144,
+      "CodeAddr": 1217676144,
+      "CodeSize": 40,
+      "CodeIndex": 17,
+      "Name": "JIT$$negative_shift",
+      "Code": "TYs+SL9wsrzY738AAEi+nDyx2O9/AABIuIeAIgSJVQAA/9Dp2Pz//w=="
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 113,
+        "Timestamp": 33241207221083
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217676192,
+      "CodeAddr": 1217676192,
+      "CodeSize": 40,
+      "CodeIndex": 18,
+      "Name": "JIT$$mod_by_zero",
+      "Code": "TYs+SL+wtLzY738AAEi+jTyx2O9/AABIuIeAIgSJVQAA/9DpqPz//w=="
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 119,
+        "Timestamp": 33241207225620
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217676240,
+      "CodeAddr": 1217676240,
+      "CodeSize": 45,
+      "CodeIndex": 19,
+      "Name": "JIT$$invalid_this",
+      "Code": "SYsGi0AQQcdEBggAAAAASDH/SL4AZbHY738AAEi4h4AiBIlVAAD/0Okz/P//"
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 84,
+        "Timestamp": 33241207229829
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217676288,
+      "CodeAddr": 1217676288,
+      "CodeSize": 12,
+      "CodeIndex": 20,
+      "Name": "JIT$$trace_halt",
+      "Code": "SLh99VgEiVUAAP/g"
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 399,
+        "Timestamp": 33241207237189
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217676304,
+      "CodeAddr": 1217676304,
+      "CodeSize": 327,
+      "CodeIndex": 21,
+      "Name": "JIT$$trace_exit",
+      "Code": "SIHs+AAAAEyJfCR4TIlcJFhMiVQkUEyJTCRITIlEJEBIiXwkOEiJdCQwSIlUJBBIiUwkCEiJBCRIi7wk+AAAAEiJ5vJEDxG8JPgAAADyRA8RtCTwAAAA8kQPEawk6AAAAPJEDxGkJOAAAADyRA8RnCTYAAAA8kQPEZQk0AAAAPJEDxGMJMgAAADyRA8RhCTAAAAA8g8RvCS4AAAA8g8RtCSwAAAA8g8RrCSoAAAA8g8RpCSgAAAA8g8RnCSYAAAA8g8RlCSQAAAA8g8RjCSIAAAA8g8RhCSAAAAATYk+SLiAU7DY738AAP/QSIHEAAEAAIXAdRNIuOjrQQWJVQAATIswTYs+Qf8nD4zi/v//SLjo60EFiVUAAEyLME2LPki4IuxBBYlVAACAOAAPhb/6//9Ji0YYSIuAwAAAAEiLgKgAAABB/yQH"
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 77,
+        "Timestamp": 33241207241307
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217676640,
+      "CodeAddr": 1217676640,
+      "CodeSize": 3,
+      "CodeIndex": 22,
+      "Name": "JIT$$trace_escape",
+      "Code": "Qf8n"
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 95,
+        "Timestamp": 33241207245537
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217676656,
+      "CodeAddr": 1217676656,
+      "CodeSize": 15,
+      "CodeIndex": 23,
+      "Name": "JIT$$hybrid_runtime_jit",
+      "Code": "SLigWrDY738AAP/QQf8n"
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 117,
+        "Timestamp": 33241207250107
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217676672,
+      "CodeAddr": 1217676672,
+      "CodeSize": 37,
+      "CodeIndex": 24,
+      "Name": "JIT$$hybrid_profile_jit",
+      "Code": "SLgg6LPY738AAEj/AEmLRhhJi1ZASIuAwAAAAEj/Av+goAAAAA=="
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 103,
+        "Timestamp": 33241207254570
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217676720,
+      "CodeAddr": 1217676720,
+      "CodeSize": 26,
+      "CodeIndex": 25,
+      "Name": "JIT$$hybrid_hot_code",
+      "Code": "ZscCE39MifdMif5IuLA4sNjvfwAA/9BB/yc="
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 132,
+        "Timestamp": 33241207259456
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217676752,
+      "CodeAddr": 1217676752,
+      "CodeSize": 47,
+      "CodeIndex": 26,
+      "Name": "JIT$$hybrid_func_hot_counter",
+      "Code": "SYtGGEiLiMAAAABIi5GgAAAAZoEqAQEPjsP///9MifpIK1BISMH6Av+kEagAAAA="
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 132,
+        "Timestamp": 33241207263852
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217676800,
+      "CodeAddr": 1217676800,
+      "CodeSize": 47,
+      "CodeIndex": 27,
+      "Name": "JIT$$hybrid_loop_hot_counter",
+      "Code": "SYtGGEiLiMAAAABIi5GgAAAAZoEq/QEPjpP///9MifpIK1BISMH6Av+kEagAAAA="
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 136,
+        "Timestamp": 33241207268671
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217676848,
+      "CodeAddr": 1217676848,
+      "CodeSize": 58,
+      "CodeIndex": 28,
+      "Name": "JIT$$hybrid_hot_trace",
+      "Code": "ZscCE39MifdMif5IuJA9sNjvfwAA/9CFwHwTSLjo60EFiVUAAEyLME2LPkH/J0i4ffVYBIlVAAD/4A=="
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 125,
+        "Timestamp": 33241207273267
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217676912,
+      "CodeAddr": 1217676912,
+      "CodeSize": 38,
+      "CodeIndex": 29,
+      "Name": "JIT$$hybrid_func_trace_counter",
+      "Code": "SYtGGEiLiMAAAABIi4moAAAASYtUDxBmgSoBAQ+Onv///0H/JA8="
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 124,
+        "Timestamp": 33241207277536
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217676960,
+      "CodeAddr": 1217676960,
+      "CodeSize": 38,
+      "CodeIndex": 30,
+      "Name": "JIT$$hybrid_ret_trace_counter",
+      "Code": "SYtGGEiLiMAAAABIi4moAAAASYtUDxBmgSrjDw+Obv///0H/JA8="
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 125,
+        "Timestamp": 33241207281707
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217677008,
+      "CodeAddr": 1217677008,
+      "CodeSize": 38,
+      "CodeIndex": 31,
+      "Name": "JIT$$hybrid_loop_trace_counter",
+      "Code": "SYtGGEiLiMAAAABIi4moAAAASYtUDxBmgSr9AQ+OPv///0H/JA8="
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 200,
+        "Timestamp": 33241207295804
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217677056,
+      "CodeAddr": 1217677056,
+      "CodeSize": 126,
+      "CodeIndex": 32,
+      "Name": "JIT$$assign_const",
+      "Code": "SIPsCIB/CAp1DkiLP0iDfxgAdRtIjX8I9kcJAXUfSIsGSIkHi1YIiVcISIPECMNIuECZp9jvfwAA/9Dr7UiLB0iJBCRIiwZIiQeLVgiJVwhIizwkgy8BdQ5IuFCKUgSJVQAA/9Drw/dHBBD8//91uki4oGFaBIlVAAD/0Ous"
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 198,
+        "Timestamp": 33241207302244
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217677184,
+      "CodeAddr": 1217677184,
+      "CodeSize": 126,
+      "CodeIndex": 33,
+      "Name": "JIT$$assign_tmp",
+      "Code": "SIPsCIB/CAp1DkiLP0iDfxgAdRtIjX8I9kcJAXUfSIsGSIkHi1YIiVcISIPECMNIuCCap9jvfwAA/9Dr7UiLB0iJBCRIiwZIiQeLVgiJVwhIizwkgy8BdQ5IuFCKUgSJVQAA/9Drw/dHBBD8//91uki4oGFaBIlVAAD/0Ous"
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 327,
+        "Timestamp": 33241207313249
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217677312,
+      "CodeAddr": 1217677312,
+      "CodeSize": 255,
+      "CodeIndex": 34,
+      "Name": "JIT$$assign_var",
+      "Code": "SIPsCIB/CAp1DkiLP0iDfxgAdSVIjX8I9kcJAXUpgH4ICg+EmwAAAEiLBkiJB4tWCIlXCEiDxAjDSLgAm6fY738AAP/Q6+1IiwdIiQQkgH4ICnUySIsWgyoBSItCCEiJB4tCEIlHCHQMhOR0JUiLB4MAAesdSInXSLjQGlAEiVUAAP/Q6wxIiwZIiQeLVgiJVwhIizwkgy8BdQ5IuFCKUgSJVQAA/9Dri/dHBBD8//91gki4oGFaBIlVAAD/0Olx////SIsWgyoBSItCCEiJB4tCEIlHCHQThOQPhFT///9IiweDAAHpSf///0iJ10i40BpQBIlVAAD/0Ok1////"
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 217,
+        "Timestamp": 33241207320175
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217677568,
+      "CodeAddr": 1217677568,
+      "CodeSize": 140,
+      "CodeIndex": 35,
+      "Name": "JIT$$assign_cv_noref",
+      "Code": "SIPsCIB/CAp1DkiLP0iDfxgAdSJIjX8I9kcJAXUmSIsGSIkHi1YIiVcIhPZ0A4MAAUiDxAjDSLhAnKfY738AAP/Q6+1IiwdIiQQkSIsGSIkHi1YIiVcIhPZ0A4MAAUiLPCSDLwF1Dki4UIpSBIlVAAD/0Ou890cEEPz//3WzSLigYVoEiVUAAP/Q66U="
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 243,
+        "Timestamp": 33241207326888
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217677712,
+      "CodeAddr": 1217677712,
+      "CodeSize": 172,
+      "CodeIndex": 36,
+      "Name": "JIT$$assign_cv",
+      "Code": "SIPsCIB/CAp1DkiLP0iDfxgAdTJIjX8I9kcJAXU2SInygHoICnUHSIsSSIPCCEiLAkiJB4tSCIlXCIT2dAODAAFIg8QIw0i4QJyn2O9/AAD/0OvtSIsHSIkEJEiJ8oB6CAp1B0iLEkiDwghIiwJIiQeLUgiJVwiE9nQDgwABSIs8JIMvAXUOSLhQilIEiVUAAP/Q66z3RwQQ/P//daNIuKBhWgSJVQAA/9DrlQ=="
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 80,
+        "Timestamp": 33241207331110
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217677888,
+      "CodeAddr": 1217677888,
+      "CodeSize": 8,
+      "CodeIndex": 37,
+      "Name": "JIT$$double_one",
+      "Code": "AAAAAAAA8D8="
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 472,
+        "Timestamp": 33241208093499
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217677904,
+      "CodeAddr": 1217677904,
+      "CodeSize": 398,
+      "CodeIndex": 38,
+      "Name": "JIT$/app/demo.php",
+      "Code": "SLgi7EEFiVUAAIA4AA+FMAEAAEmLVkBIi0IISIXAD4QrAQAASb/I60EFiVUAAE2LP0i60OtBBYlVAABIixJMKfpIgfqwAAAAD4IdAQAASLrI60EFiVUAAEiBArAAAABBx0coAAAAAEmJRxhJx0cgAAAAAEHHRywBAAAAScdHUCoAAABBx0dYBAAAAEnHBhCKIUFNiXcwScdHCAAAAABJjVZgSYlXEEi5wPJBBYlVAABIixFIi5KxBQAASYlXQEi56OtBBYlVAABMiTlNif5Bx0doAAAAAEHHR3gAAAAAQceHiAAAAAAAAABBx4eYAAAAAAAAAEnHx5CHIUFB/ydIuCAAVQSJVQAA/9BIuGDtQQWJVQAASIM4AA+FwvT//0i4gP9UBIlVAAD/0Ei4YO1BBYlVAABIgzgAD4Wi9P//6b3+//9Jx8fQiSFB6WH0//9Ix8dghiFBSIl6CEi4IGOn2O9/AAD/0Om5/v//v7AAAABIicZJxwbQiSFBSLgAp6fY738AAP/QSYnH6d3+//8="
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 676,
+        "Timestamp": 33241208134031
+      },
+      "PID": 1,
+      "TID": 1,
+      "VMA": 1217678304,
+      "CodeAddr": 1217678304,
+      "CodeSize": 606,
+      "CodeIndex": 39,
+      "Name": "JIT$Fibonacci",
+      "Code": "QYN+LAEPgikBAABBgH5YBA+FOQEAAEnHx5CHIUHrAEnHRmAAAAAAQcdGaAQAAABJx0ZwAQAAAEHHRngEAAAASDH262RJiX5QQcdGWAQAAABJi0ZgSYmGgAAAAEGLVmhBiZaIAAAASYtGcEmJRmBBi1Z4QYlWaEGAfngED4VNAQAAQYC+iAAAAAQPhesAAABJi0ZwSQOGgAAAAA+AAAEAAEmJRnBIg8YBSLgi7EEFiVUAAIA4AA+FVQEAAEmLflBIOf58gEGAfmgED4VNAQAASYtOEEiFyXQOSYtWYEiJEcdBCAQAAABJi0YwSLro60EFiVUAAEiJAkH3RigAAJ4ID4VL9P//SLjI60EFiVUAAEyJME2LdjBIuGDtQQWJVQAASIM4AE2LPg+FU/T//0mDxyBB/ydJxwZwhyFBTIn3SLgAVCMEiVUAAP/Q6QHz//9JjX5QSccGcIchQUjHxliJIUFIuPCop9jvfwAA/9CEwA+Fof7//+nW8v//xfhXwMTB+ypGcMTBe1iGgAAAAMTB+xFGcEHHRngFAAAA6QT////F+FfAxMH7KkZwxfBXycTB8yqOgAAAAMX7WMHEwfsRRnBBx0Z4BQAAAOnW/v//QYC+iAAAAAV1GsTBexBGcMTBe1iGgAAAAMTB+xFGcOmy/v//xfhXwMTB+yqGgAAAAMTBe1hGcMTB+xFGcOmU/v//ScfHkIghQekE8v//SccG0IghQUmNfmBJi3YYSMfCOIkhQUmLRkBIjQhIuECpp9jvfwAA/9BIuGDtQQWJVQAASIM4AA+F9/H//+lx/v//"
+    }
+  ],
+  "CodeMoves": [],
+  "DebugInfo": [],
+  "UnwindingInfo": []
+}
