@@ -23,4 +23,17 @@ validate:
 	$(EH_FRAME_BIN) --executable vendored/libruby > tables/ours_libruby.txt
 	$(EH_FRAME_BIN) --executable vendored/redpanda > tables/ours_redpanda.txt
 
+validate-compact:
+	$(EH_FRAME_BIN) --executable out/basic-cpp --compact > compact_tables/ours_basic-cpp.txt
+	$(EH_FRAME_BIN) --executable out/basic-cpp-plt --compact > compact_tables/ours_basic-cpp-plt.txt
+	$(EH_FRAME_BIN) --executable out/basic-cpp-no-fp --compact > compact_tables/ours_basic-cpp-no-fp.txt
+
+	$(EH_FRAME_BIN) --executable vendored/libc.so.6 --compact > compact_tables/ours_libc_so_6.txt
+	$(EH_FRAME_BIN) --executable vendored/libpython3.10.so.1.0 --compact > compact_tables/ours_libpython3.10.txt
+	$(EH_FRAME_BIN) --executable vendored/systemd --compact  > compact_tables/ours_systemd.txt
+	$(EH_FRAME_BIN) --executable vendored/parca-agent --compact > compact_tables/ours_parca-agent.txt
+	$(EH_FRAME_BIN) --executable vendored/ruby --compact  > compact_tables/ours_ruby.txt
+	$(EH_FRAME_BIN) --executable vendored/libruby --compact  > compact_tables/ours_libruby.txt
+	$(EH_FRAME_BIN) --executable vendored/redpanda --compact > compact_tables/ours_redpanda.txt
+
 all: validate
