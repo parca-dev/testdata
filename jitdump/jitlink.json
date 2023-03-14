@@ -1,0 +1,126 @@
+{
+  "Header": {
+    "Magic": 1248416836,
+    "Version": 1,
+    "TotalSize": 40,
+    "ElfMach": 62,
+    "Pad1": 0,
+    "Pid": 3627335,
+    "Timestamp": 2816996443206813,
+    "Flags": 0
+  },
+  "CodeLoads": [
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 69,
+        "Timestamp": 2816996446797931
+      },
+      "PID": 3627335,
+      "TID": 3627335,
+      "VMA": 140206972633088,
+      "CodeAddr": 140206972633088,
+      "CodeSize": 6,
+      "CodeIndex": 0,
+      "Name": "source",
+      "Code": "uAEAAADD"
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 74,
+        "Timestamp": 2816996446806571
+      },
+      "PID": 3627335,
+      "TID": 3627335,
+      "VMA": 140206972633104,
+      "CodeAddr": 140206972633104,
+      "CodeSize": 6,
+      "CodeIndex": 1,
+      "Name": "passthrough",
+      "Code": "uAEAAADD"
+    },
+    {
+      "Prefix": {
+        "ID": 0,
+        "TotalSize": 67,
+        "Timestamp": 2816996446813571
+      },
+      "PID": 3627335,
+      "TID": 3627335,
+      "VMA": 140206972633120,
+      "CodeAddr": 140206972633120,
+      "CodeSize": 6,
+      "CodeIndex": 2,
+      "Name": "main",
+      "Code": "uAEAAADD"
+    }
+  ],
+  "CodeMoves": [],
+  "DebugInfo": [
+    {
+      "Prefix": {
+        "ID": 2,
+        "TotalSize": 63,
+        "Timestamp": 2816996446797311
+      },
+      "CodeAddr": 140206972633088,
+      "NREntry": 1,
+      "Entries": [
+        {
+          "Addr": 140206972633152,
+          "Lineno": 2,
+          "Discrim": 0,
+          "Name": "/app/example.c"
+        }
+      ]
+    },
+    {
+      "Prefix": {
+        "ID": 2,
+        "TotalSize": 63,
+        "Timestamp": 2816996446806331
+      },
+      "CodeAddr": 140206972633104,
+      "NREntry": 1,
+      "Entries": [
+        {
+          "Addr": 140206972633168,
+          "Lineno": 6,
+          "Discrim": 0,
+          "Name": "/app/example.c"
+        }
+      ]
+    },
+    {
+      "Prefix": {
+        "ID": 2,
+        "TotalSize": 63,
+        "Timestamp": 2816996446813211
+      },
+      "CodeAddr": 140206972633120,
+      "NREntry": 1,
+      "Entries": [
+        {
+          "Addr": 140206972633184,
+          "Lineno": 10,
+          "Discrim": 0,
+          "Name": "/app/example.c"
+        }
+      ]
+    }
+  ],
+  "UnwindingInfo": [
+    {
+      "Prefix": {
+        "ID": 4,
+        "TotalSize": 140,
+        "Timestamp": 2816996446814531
+      },
+      "UnwindingSize": 100,
+      "EHFrameHDRSize": 8,
+      "MappedSize": 0,
+      "UnwindingData": "AQz//wByzHoUAAAAAAAAAAF6UgABeBABGwwHCJABAAAQAAAAHAAAAOANAAAGAAAAAAAAABAAAAAwAAAA3A0AAAYAAAAAAAAAFAAAAEQAAADYDQAABgAAAAAAAAAAAAAAAAAAAA=="
+    }
+  ]
+}
