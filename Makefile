@@ -3,7 +3,8 @@ EH_FRAME_BIN = ../dist/eh-frame
 all: lint build
 
 lint:
-	clang-format -i src/*
+	clang-format -i src/*.cpp
+	go fmt src/*.go
 
 build:
 	gcc src/basic-cpp.cpp -o out/basic-cpp -g
@@ -15,7 +16,8 @@ build:
 	# The JIT code has frame pointers.
 	gcc src/basic-cpp-jit.cpp -o out/basic-cpp-jit -g
 	gcc src/basic-cpp-jit.cpp -o out/basic-cpp-jit-no-fp -fomit-frame-pointer -g
-
+	# Go code.
+	go build -o out/basic-go src/main.go
 
 validate:
 	$(EH_FRAME_BIN) --executable out/basic-cpp > tables/ours_basic-cpp.txt
