@@ -20,29 +20,29 @@ build:
 	go build -o out/x86/basic-go src/main.go
 
 validate:
-	$(EH_FRAME_BIN) --executable out/x86/basic-cpp > tables/ours_basic-cpp.txt
-	$(EH_FRAME_BIN) --executable out/x86/basic-cpp-plt > tables/ours_basic-cpp-plt.txt
-	$(EH_FRAME_BIN) --executable out/x86/basic-cpp-no-fp > tables/ours_basic-cpp-no-fp.txt
+	$(EH_FRAME_BIN) --executable out/x86/basic-cpp > tables/x86/ours_basic-cpp.txt
+	$(EH_FRAME_BIN) --executable out/x86/basic-cpp-plt > tables/x86/ours_basic-cpp-plt.txt
+	$(EH_FRAME_BIN) --executable out/x86/basic-cpp-no-fp > tables/x86/ours_basic-cpp-no-fp.txt
 
-	$(EH_FRAME_BIN) --executable vendored/x86/libc.so.6 > tables/ours_libc_so_6.txt
-	$(EH_FRAME_BIN) --executable vendored/x86/libpython3.10.so.1.0 > tables/ours_libpython3.10.txt
-	$(EH_FRAME_BIN) --executable vendored/x86/systemd > tables/ours_systemd.txt
-	$(EH_FRAME_BIN) --executable vendored/x86/parca-agent > tables/ours_parca-agent.txt
-	$(EH_FRAME_BIN) --executable vendored/x86/ruby > tables/ours_ruby.txt
-	$(EH_FRAME_BIN) --executable vendored/x86/libruby > tables/ours_libruby.txt
-	$(EH_FRAME_BIN) --executable vendored/x86/redpanda > tables/ours_redpanda.txt
+	$(EH_FRAME_BIN) --executable vendored/x86/libc.so.6 > tables/x86/ours_libc_so_6.txt
+	$(EH_FRAME_BIN) --executable vendored/x86/libpython3.10.so.1.0 > tables/x86/ours_libpython3.10.txt
+	$(EH_FRAME_BIN) --executable vendored/x86/systemd > tables/x86/ours_systemd.txt
+	$(EH_FRAME_BIN) --executable vendored/x86/parca-agent > tables/x86/ours_parca-agent.txt
+	$(EH_FRAME_BIN) --executable vendored/x86/ruby > tables/x86/ours_ruby.txt
+	$(EH_FRAME_BIN) --executable vendored/x86/libruby > tables/x86/ours_libruby.txt
+	$(EH_FRAME_BIN) --executable vendored/x86/redpanda > tables/x86/ours_redpanda.txt
 
 validate-compact:
-	$(EH_FRAME_BIN) --executable out/x86/basic-cpp --compact > compact_tables/ours_basic-cpp.txt
-	$(EH_FRAME_BIN) --executable out/x86/basic-cpp-plt --compact > compact_tables/ours_basic-cpp-plt.txt
-	$(EH_FRAME_BIN) --executable out/x86/basic-cpp-no-fp --compact > compact_tables/ours_basic-cpp-no-fp.txt
+	$(EH_FRAME_BIN) --executable out/x86/basic-cpp --compact > compact_tables/x86/ours_basic-cpp.txt
+	$(EH_FRAME_BIN) --executable out/x86/basic-cpp-plt --compact > compact_tables/x86/ours_basic-cpp-plt.txt
+	$(EH_FRAME_BIN) --executable out/x86/basic-cpp-no-fp --compact > compact_tables/x86/ours_basic-cpp-no-fp.txt
 
-	$(EH_FRAME_BIN) --executable vendored/x86/libc.so.6 --compact > compact_tables/ours_libc_so_6.txt
-	$(EH_FRAME_BIN) --executable vendored/x86/libpython3.10.so.1.0 --compact > compact_tables/ours_libpython3.10.txt
-	$(EH_FRAME_BIN) --executable vendored/x86/systemd --compact  > compact_tables/ours_systemd.txt
-	$(EH_FRAME_BIN) --executable vendored/x86/parca-agent --compact > compact_tables/ours_parca-agent.txt
-	$(EH_FRAME_BIN) --executable vendored/x86/ruby --compact  > compact_tables/ours_ruby.txt
-	$(EH_FRAME_BIN) --executable vendored/x86/libruby --compact  > compact_tables/ours_libruby.txt
-	$(EH_FRAME_BIN) --executable vendored/x86/redpanda --compact > compact_tables/ours_redpanda.txt
+	$(EH_FRAME_BIN) --executable vendored/x86/libc.so.6 --compact > compact_tables/x86/ours_libc_so_6.txt
+	$(EH_FRAME_BIN) --executable vendored/x86/libpython3.10.so.1.0 --compact > compact_tables/x86/ours_libpython3.10.txt
+	$(EH_FRAME_BIN) --executable vendored/x86/systemd --compact  > compact_tables/x86/ours_systemd.txt
+	$(EH_FRAME_BIN) --executable vendored/x86/parca-agent --compact > compact_tables/x86/ours_parca-agent.txt
+	$(EH_FRAME_BIN) --executable vendored/x86/ruby --compact  > compact_tables/x86/ours_ruby.txt
+	$(EH_FRAME_BIN) --executable vendored/x86/libruby --compact  > compact_tables/x86/ours_libruby.txt
+	$(EH_FRAME_BIN) --executable vendored/x86/redpanda --compact > compact_tables/x86/ours_redpanda.txt
 
 all: validate
