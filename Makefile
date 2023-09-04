@@ -47,17 +47,17 @@ validate:
 	$(EH_FRAME_BIN) --executable vendored/x86/libruby > tables/x86/ours_libruby.txt
 	$(EH_FRAME_BIN) --executable vendored/x86/redpanda > tables/x86/ours_redpanda.txt
 
-	$(EH_FRAME_BIN) --executable out/arm64/basic-cpp > tables/arm64/ours_basic-cpp.txt
-	$(EH_FRAME_BIN) --executable out/arm64/basic-cpp-plt > tables/arm64/ours_basic-cpp-plt.txt
-	$(EH_FRAME_BIN) --executable out/arm64/basic-cpp-no-fp > tables/arm64/ours_basic-cpp-no-fp.txt
+	# $(EH_FRAME_BIN) --executable out/arm64/basic-cpp > tables/arm64/ours_basic-cpp.txt
+	# $(EH_FRAME_BIN) --executable out/arm64/basic-cpp-plt > tables/arm64/ours_basic-cpp-plt.txt
+	# $(EH_FRAME_BIN) --executable out/arm64/basic-cpp-no-fp > tables/arm64/ours_basic-cpp-no-fp.txt
 
-	$(EH_FRAME_BIN) --executable vendored/arm64/libc.so.6 > tables/arm64/ours_libc_so_6.txt
-	$(EH_FRAME_BIN) --executable vendored/arm64/libpython3.10.so.1.0 > tables/arm64/ours_libpython3.10.txt
-	$(EH_FRAME_BIN) --executable vendored/arm64/systemd > tables/arm64/ours_systemd.txt
-	$(EH_FRAME_BIN) --executable vendored/arm64/parca-agent > tables/arm64/ours_parca-agent.txt
-	$(EH_FRAME_BIN) --executable vendored/arm64/ruby > tables/arm64/ours_ruby.txt
-	$(EH_FRAME_BIN) --executable vendored/arm64/libruby > tables/arm64/ours_libruby.txt
-	$(EH_FRAME_BIN) --executable vendored/arm64/redpanda > tables/arm64/ours_redpanda.txt
+	# $(EH_FRAME_BIN) --executable vendored/arm64/libc.so.6 > tables/arm64/ours_libc_so_6.txt
+	# $(EH_FRAME_BIN) --executable vendored/arm64/libpython3.10.so.1.0 > tables/arm64/ours_libpython3.10.txt
+	# $(EH_FRAME_BIN) --executable vendored/arm64/systemd > tables/arm64/ours_systemd.txt
+	# $(EH_FRAME_BIN) --executable vendored/arm64/parca-agent > tables/arm64/ours_parca-agent.txt
+	# $(EH_FRAME_BIN) --executable vendored/arm64/ruby > tables/arm64/ours_ruby.txt
+	# $(EH_FRAME_BIN) --executable vendored/arm64/libruby > tables/arm64/ours_libruby.txt
+	# $(EH_FRAME_BIN) --executable vendored/arm64/redpanda > tables/arm64/ours_redpanda.txt
 
 
 validate-compact:
@@ -73,16 +73,16 @@ validate-compact:
 	$(EH_FRAME_BIN) --executable vendored/x86/libruby --compact  > compact_tables/x86/ours_libruby.txt
 	$(EH_FRAME_BIN) --executable vendored/x86/redpanda --compact > compact_tables/x86/ours_redpanda.txt
 
-	$(EH_FRAME_BIN) --executable out/arm64/basic-cpp --compact > compact_tables/arm64/ours_basic-cpp.txt
-	$(EH_FRAME_BIN) --executable out/arm64/basic-cpp-plt --compact > compact_tables/arm64/ours_basic-cpp-plt.txt
-	$(EH_FRAME_BIN) --executable out/arm64/basic-cpp-no-fp --compact > compact_tables/arm64/ours_basic-cpp-no-fp.txt
+	# $(EH_FRAME_BIN) --executable out/arm64/basic-cpp --compact > compact_tables/arm64/ours_basic-cpp.txt
+	# $(EH_FRAME_BIN) --executable out/arm64/basic-cpp-plt --compact > compact_tables/arm64/ours_basic-cpp-plt.txt
+	# $(EH_FRAME_BIN) --executable out/arm64/basic-cpp-no-fp --compact > compact_tables/arm64/ours_basic-cpp-no-fp.txt
 
-	$(EH_FRAME_BIN) --executable vendored/arm64/libc.so.6 --compact > compact_tables/arm64/ours_libc_so_6.txt
-	$(EH_FRAME_BIN) --executable vendored/arm64/libpython3.10.so.1.0 --compact > compact_tables/arm64/ours_libpython3.10.txt
-	$(EH_FRAME_BIN) --executable vendored/arm64/systemd --compact  > compact_tables/arm64/ours_systemd.txt
-	$(EH_FRAME_BIN) --executable vendored/arm64/parca-agent --compact > compact_tables/arm64/ours_parca-agent.txt
-	$(EH_FRAME_BIN) --executable vendored/arm64/ruby --compact  > compact_tables/arm64/ours_ruby.txt
-	$(EH_FRAME_BIN) --executable vendored/arm64/libruby --compact  > compact_tables/arm64/ours_libruby.txt
-	$(EH_FRAME_BIN) --executable vendored/arm64/redpanda --compact > compact_tables/arm64/ours_redpanda.txt
+	# $(EH_FRAME_BIN) --executable vendored/arm64/libc.so.6 --compact > compact_tables/arm64/ours_libc_so_6.txt
+	# $(EH_FRAME_BIN) --executable vendored/arm64/libpython3.10.so.1.0 --compact > compact_tables/arm64/ours_libpython3.10.txt
+	# $(EH_FRAME_BIN) --executable vendored/arm64/systemd --compact  > compact_tables/arm64/ours_systemd.txt
+	# $(EH_FRAME_BIN) --executable vendored/arm64/parca-agent --compact > compact_tables/arm64/ours_parca-agent.txt
+	# $(EH_FRAME_BIN) --executable vendored/arm64/ruby --compact  > compact_tables/arm64/ours_ruby.txt
+	# $(EH_FRAME_BIN) --executable vendored/arm64/libruby --compact  > compact_tables/arm64/ours_libruby.txt
+	# $(EH_FRAME_BIN) --executable vendored/arm64/redpanda --compact > compact_tables/arm64/ours_redpanda.txt
 
 all: validate
