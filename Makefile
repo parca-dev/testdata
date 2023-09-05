@@ -1,4 +1,4 @@
-EH_FRAME_BIN = ../parca-agent/dist/eh-frame
+EH_FRAME_BIN = ../dist/eh-frame
 
 all: lint build
 
