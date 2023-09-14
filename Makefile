@@ -76,8 +76,8 @@ validate-compact:
 	$(EH_FRAME_BIN) --executable out/arm64/basic-cpp --compact > compact_tables/arm64/ours_basic-cpp.txt
 	$(EH_FRAME_BIN) --executable out/arm64/basic-cpp-plt --compact > compact_tables/arm64/ours_basic-cpp-plt.txt
 	$(EH_FRAME_BIN) --executable out/arm64/basic-cpp-no-fp --compact > compact_tables/arm64/ours_basic-cpp-no-fp.txt
+	$(EH_FRAME_BIN) --executable vendored/arm64/libc.so.6 --compact > compact_tables/arm64/ours_libc_so_6.txt
 
-	# $(EH_FRAME_BIN) --executable vendored/arm64/libc.so.6 --compact > compact_tables/arm64/ours_libc_so_6.txt
 	# $(EH_FRAME_BIN) --executable vendored/arm64/libpython3.10.so.1.0 --compact > compact_tables/arm64/ours_libpython3.10.txt
 	# $(EH_FRAME_BIN) --executable vendored/arm64/systemd --compact  > compact_tables/arm64/ours_systemd.txt
 	# $(EH_FRAME_BIN) --executable vendored/arm64/parca-agent --compact > compact_tables/arm64/ours_parca-agent.txt
