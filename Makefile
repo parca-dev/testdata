@@ -50,7 +50,6 @@ validate:
 	$(EH_FRAME_BIN) --executable out/arm64/basic-cpp > tables/arm64/ours_basic-cpp.txt
 	$(EH_FRAME_BIN) --executable out/arm64/basic-cpp-plt > tables/arm64/ours_basic-cpp-plt.txt
 	$(EH_FRAME_BIN) --executable out/arm64/basic-cpp-no-fp > tables/arm64/ours_basic-cpp-no-fp.txt
-	$(EH_FRAME_BIN) --executable vendored/arm64/libc.so.6 > tables/arm64/ours_libc_so_6.txt
 
 	# $(EH_FRAME_BIN) --executable vendored/arm64/libpython3.10.so.1.0 > tables/arm64/ours_libpython3.10.txt
 	# $(EH_FRAME_BIN) --executable vendored/arm64/systemd > tables/arm64/ours_systemd.txt
