@@ -1,6 +1,6 @@
 => Function start: 400500, Function end: 40053c
 	pc: 400500 cfa_type: 2  rbp_type: 0  cfa_offset: 0    rbp_offset: 0   lr_offset: 0   
-	pc: 400504 cfa_type: 2  rbp_type: 0  cfa_offset: 0    rbp_offset: 0   lr_offset: 0   
+	pc: 400504 cfa_type: 2  rbp_type: 4  cfa_offset: 0    rbp_offset: 0   lr_offset: 0   
 => Function start: 400540, Function end: 400544
 	pc: 400540 cfa_type: 2  rbp_type: 0  cfa_offset: 0    rbp_offset: 0   lr_offset: 0   
 => Function start: 400560, Function end: 400590
