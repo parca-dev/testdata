@@ -13,6 +13,7 @@ build:
 	gcc src/basic-cpp.cpp -o out/x86/basic-cpp-no-fp-with-debuginfo -fomit-frame-pointer -g
 	gcc src/basic-cpp-plt.cpp -o out/x86/basic-cpp-plt-pie -pie -fPIE
 	gcc src/basic-cpp-plt.cpp -o out/x86/basic-cpp-plt-hardened -pie -fPIE -fstack-protector-all -D_FORTIFY_SOURCE=2 -Wl,-z,now -Wl,-z,relro -O2
+	gcc src/basic-cpp-multithreaded-no-fp.cpp -o out/x86/basic-cpp-multithreaded-no-fp -fomit-frame-pointer
 	# The JIT code has frame pointers.
 	gcc src/basic-cpp-jit.cpp -o out/x86/basic-cpp-jit -g
 	gcc src/basic-cpp-jit.cpp -o out/x86/basic-cpp-jit-no-fp -fomit-frame-pointer -g
@@ -25,12 +26,12 @@ build:
 	gcc src/basic-cpp.cpp -fno-PIE -no-pie -o out/arm64/basic-cpp-no-fp-with-debuginfo -fomit-frame-pointer -g
 	gcc src/basic-cpp-plt.cpp -o out/arm64/basic-cpp-plt-pie -pie -fPIE
 	gcc src/basic-cpp-plt.cpp -o out/arm64/basic-cpp-plt-hardened -pie -fPIE -fstack-protector-all -D_FORTIFY_SOURCE=2 -Wl,-z,now -Wl,-z,relro -O2
-	
-	# The JIT code has frame pointers but isn't for Arm64 
+
+	# The JIT code has frame pointers but isn't for Arm64
 	# TODO(sylfrena): Port JIT toy binaries for arm64
 	# gcc src/basic-cpp-jit.cpp -o out/arm64/basic-cpp-jit -g
 	# gcc src/basic-cpp-jit.cpp -o out/arm64/basic-cpp-jit-no-fp -fomit-frame-pointer -g
-	
+
 	# Go code.
 	go build -o out/arm64/basic-go src/main.go
 
