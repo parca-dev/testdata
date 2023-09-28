@@ -7,6 +7,7 @@ This repo has some small custom binaries and vendored executables we use for tes
 - `vendored/` hosts prebuilt executables
 - `tables/` contains a textual representation of the unwind tables. the names follow the following format `"<producer>_<the executable name>.txt"`. `<producer>` is the name of the tool that produced the table, "ours" for our implementation 
 - `compact_tables/` as above, but using the compact unwind format we use in BPF
+- `final_tables/` similar to compact tables, but after any processing. These are the ones that would be loaded in the BPF maps
 
 ## TODO
 - Improve Makefile
