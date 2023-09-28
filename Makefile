@@ -61,6 +61,24 @@ validate:
 	# $(EH_FRAME_BIN) --executable vendored/arm64/redpanda > tables/arm64/ours_redpanda.txt
 
 
+validate-final:
+	$(EH_FRAME_BIN) --executable out/x86/basic-cpp --final > final_tables/x86/ours_basic-cpp.txt
+	$(EH_FRAME_BIN) --executable out/x86/basic-cpp-plt --final > final_tables/x86/ours_basic-cpp-plt.txt
+	$(EH_FRAME_BIN) --executable out/x86/basic-cpp-no-fp --final > final_tables/x86/ours_basic-cpp-no-fp.txt
+
+	$(EH_FRAME_BIN) --executable vendored/x86/libc.so.6 --final > final_tables/x86/ours_libc_so_6.txt
+	$(EH_FRAME_BIN) --executable vendored/x86/libpython3.10.so.1.0 --compact > final_tables/x86/ours_libpython3.10.txt
+	$(EH_FRAME_BIN) --executable vendored/x86/systemd --final  > final_tables/x86/ours_systemd.txt
+	$(EH_FRAME_BIN) --executable vendored/x86/parca-agent --final > final_tables/x86/ours_parca-agent.txt
+	$(EH_FRAME_BIN) --executable vendored/x86/ruby --final  > final_tables/x86/ours_ruby.txt
+	$(EH_FRAME_BIN) --executable vendored/x86/libruby --final  > final_tables/x86/ours_libruby.txt
+	$(EH_FRAME_BIN) --executable vendored/x86/redpanda --final > final_tables/x86/ours_redpanda.txt
+
+	$(EH_FRAME_BIN) --executable out/arm64/basic-cpp --final > final_tables/arm64/ours_basic-cpp.txt
+	$(EH_FRAME_BIN) --executable out/arm64/basic-cpp-plt --final > final_tables/arm64/ours_basic-cpp-plt.txt
+	$(EH_FRAME_BIN) --executable out/arm64/basic-cpp-no-fp --final > final_tables/arm64/ours_basic-cpp-no-fp.txt
+	$(EH_FRAME_BIN) --executable vendored/arm64/libc.so.6 --final > final_tables/arm64/ours_libc_so_6.txt
+
 validate-compact:
 	$(EH_FRAME_BIN) --executable out/x86/basic-cpp --compact > compact_tables/x86/ours_basic-cpp.txt
 	$(EH_FRAME_BIN) --executable out/x86/basic-cpp-plt --compact > compact_tables/x86/ours_basic-cpp-plt.txt
