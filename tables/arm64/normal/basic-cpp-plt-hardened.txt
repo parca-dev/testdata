@@ -1,0 +1,11 @@
+=> Function start: 10598, Function end: 105c4
+	Loc: 10598 CFA: $x30=0   	RBP: u	RA($EM_AARCH64): u
+	Loc: 1059c CFA: $x30=32  	RBP: u	RA($EM_AARCH64): u
+	Loc: 105a0 CFA: $x30=32  	RBP: u	RA: c-32 
+=> Function start: 105c4, Function end: 10630
+	Loc: 105c4 CFA: $x30=0   	RBP: u	RA($EM_AARCH64): u
+	Loc: 105c8 CFA: $x30=48  	RBP: u	RA($EM_AARCH64): u
+	Loc: 105d0 CFA: $x30=48  	RBP: u	RA: c-48 
+	Loc: 1062c CFA: $x30=0   	RBP: u	RA: c0   
+=> Function start: 10630, Function end: 10634
+	Loc: 10630 CFA: $x30=0   	RBP: u	RA($EM_AARCH64): u

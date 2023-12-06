@@ -1,0 +1,25 @@
+{
+  "packages": [
+    "go@1.21.4",
+    "zig@0.11.0",
+    "mage@1.15.0",
+    "clang-tools@14.0.6"
+  ],
+  "env": {
+    "CC": "zig cc",
+    "CXX": "zig c++"
+  },
+  "shell": {
+    "init_hook": [
+      "echo 'Welcome to devbox!' > /dev/null"
+    ],
+    "scripts": {
+      "build": "mage build:cross",
+      "format": "mage format:all",
+      "generate": "mage -v generate:all",
+      "test": [
+        "echo \"Error: no test specified\" && exit 1"
+      ]
+    }
+  }
+}
