@@ -363,7 +363,7 @@ func generateTables(src, dst string, flags ...string) error {
 				return nil
 			}
 
-			outputFilePath := fullTablesPath(target.goarch, path.Join(dst, info.Name()+".txt"))
+			outputFilePath := fullTablesPath(target.goarch, path.Join(dst, fmt.Sprintf("ours_%s.txt", info.Name())))
 
 			chaged, err := mgtarget.Path(outputFilePath, p)
 			if err != nil {
