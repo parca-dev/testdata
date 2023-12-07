@@ -21,4 +21,5 @@ jobs:
         run: devbox run generate
 
       - name: Validate
-        run: git diff --exit-code --color
+        # TODO(kakkoyun): Remove the exlusion of out directory once we have reproducible builds.
+        run: git diff --exit-code ':!out/'
