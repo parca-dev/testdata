@@ -1,0 +1,16 @@
+name: CI
+
+on: push
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: run
+        uses: dagger/dagger-for-github@v5
+        with:
+          verb: call
+          module: ci
+          args: run --src "."

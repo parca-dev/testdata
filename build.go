@@ -89,6 +89,10 @@ func (t Target) CrossCXXCmd() string {
 	return fmt.Sprintf("%s -target %s", bin(CXX), t.cTarget)
 }
 
+func (t Target) GoCmd() string {
+	return fmt.Sprintf("%s -goarch %s -goos %s", bin(GO), t.goarch, t.goos)
+}
+
 const (
 	out      = "out"
 	vendored = "vendored"
