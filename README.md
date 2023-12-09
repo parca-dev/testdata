@@ -24,3 +24,8 @@ To build the executables, run `mage build:all` or `make build`. This will build 
 ## Adding new tables
 
 To add a new table, run `mage generate:all` or `make generate`. This will build the tables and place them in `tables/normal/`,`tables/compact/` and `final_tables/`.
+
+
+# TODO(kakkoyun):
+# dagger mod install github.com/tsirysndr/daggerverse/devbox@0dd781fc462998725cb8f8eef88158a98945e7a8
+# dag.DevBox().Run(...)

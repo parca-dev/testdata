@@ -1,5 +1,9 @@
 package main
 
+import (
+	"github.com/parca-dev/testdata/build"
+)
+
 type CI struct{}
 
 func (m *CI) devbox(src *Directory) *Container {
@@ -12,6 +16,7 @@ func (m *CI) devbox(src *Directory) *Container {
 }
 
 func (m *CI) build(src *Directory) *Container {
+	build.All()
 	return m.devbox(src).
 		WithExec([]string{"devbox", "run", "build"})
 }

@@ -1,7 +1,5 @@
-//go:build mage
-
 // This file is used by mage to build the project.
-package main
+package build
 
 import (
 	"errors"
