@@ -1,2 +1,3 @@
 vendored/ linguist-vendored
 out/ linguist-generated
+tables/ linguist-generated
