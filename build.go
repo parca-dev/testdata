@@ -98,7 +98,7 @@ const (
 	vendored = "vendored"
 
 	tables        = "tables"
-	normalTables  = "normal"
+	defaultTables = "default"
 	finalTables   = "final"
 	compactTables = "compact"
 )
@@ -352,7 +352,7 @@ type Generate mg.Namespace
 
 // All generates all the tables.
 func (Generate) All() error {
-	mg.SerialDeps(Generate.Normal, Generate.Final, Generate.Compact)
+	mg.SerialDeps(Generate.Default, Generate.Final, Generate.Compact)
 	return nil
 }
 
@@ -369,11 +369,11 @@ func generateTables(src, dst string, flags ...string) error {
 
 			outputFilePath := fullTablesPath(target.goarch, path.Join(dst, fmt.Sprintf("ours_%s.txt", info.Name())))
 
-			chaged, err := mgtarget.Path(outputFilePath, p)
+			changed, err := mgtarget.Path(outputFilePath, p)
 			if err != nil {
 				return err
 			}
-			if !chaged {
+			if !changed {
 				return nil
 			}
 
@@ -395,11 +395,11 @@ func generateTables(src, dst string, flags ...string) error {
 	return nil
 }
 
-// Normal generates all the normal tables.
-func (Generate) Normal() error {
+// Default generates all the default tables.
+func (Generate) Default() error {
 	var errs error
-	errs = errors.Join(errs, generateTables(out, normalTables))
-	errs = errors.Join(errs, generateTables(vendored, normalTables))
+	errs = errors.Join(errs, generateTables(out, defaultTables))
+	errs = errors.Join(errs, generateTables(vendored, defaultTables))
 	return errs
 }
 

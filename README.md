@@ -8,7 +8,7 @@ This repo has some small custom binaries and vendored executables we use for tes
 
 ## Structure
 
-- `tables/normal` contains a textual representation of the unwind tables. the names follow the following format `"<producer>_<the executable name>.txt"`. `<producer>` is the name of the tool that produced the table, "ours" for our implementation.
+- `tables/default` contains a textual representation of the unwind tables. the names follow the following format `"<producer>_<the executable name>.txt"`. `<producer>` is the name of the tool that produced the table, "ours" for our implementation.
 - `tables/compact` as above, but using the compact unwind format we use in BPF.
 - `tables/tables` similar to compact tables, but after any processing. These are the ones that would be loaded in the BPF maps.
 - `jitdump` contains the jitdump files for certain executables. These are used to test the JIT dump parser.
@@ -23,4 +23,4 @@ To build the executables, run `mage build:all` or `make build`. This will build 
 
 ## Adding new tables
 
-To add a new table, run `mage generate:all` or `make generate`. This will build the tables and place them in `tables/normal/`,`tables/compact/` and `final_tables/`.
+To add a new table, run `mage generate:all` or `make generate`. This will build the tables and place them in `tables/default/`,`tables/compact/` and `final_tables/`.
