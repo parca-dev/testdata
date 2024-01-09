@@ -1,0 +1,31 @@
+{
+  "packages": [
+    "go@1.21.4",
+    "zig@0.11.0",
+    "mage@1.15.0",
+    "clang-tools@14.0.6"
+  ],
+  "env": {
+    "CC": "zig cc",
+    "CXX": "zig c++",
+    "LD": "ld.lld",
+    "GOROOT": "${PWD}/.devbox/nix/profile/default/share/go",
+    "GOPATH": "${PWD}/.devbox/go",
+    "GOBIN": "${PWD}/.devbox/go/bin"
+  },
+  "shell": {
+    "init_hook": [
+      "export PATH=$(go env GOBIN):$PATH",
+      "go mod download",
+      "echo 'Welcome to devbox!' > /dev/null"
+    ],
+    "scripts": {
+      "build": "mage build:cross",
+      "format": "mage format:all",
+      "generate": "mage -v generate:all",
+      "test": [
+        "echo \"Error: no test specified\" && exit 1"
+      ]
+    }
+  }
+}
