@@ -204,7 +204,7 @@ func (Build) Go() error {
 	return errs
 }
 
-var cppBuildVariants = []Variant{
+var cppBuildVariantsCommon = []Variant{
 	{
 		name:  "basic-cpp",
 		src:   "./src/basic-cpp.cpp",
@@ -270,7 +270,13 @@ var cppBuildVariants = []Variant{
 		src:   "./src/basic-cpp-multithreaded.cpp",
 		flags: []string{"-fno-omit-frame-pointer"},
 	},
+}
+
+// TODO(sylfrena): Add Build() for this
+var cppBuildVariantsX86 = []Variant{
 	// -c -g -gz=zlib
+	// The toy JIT binary is written for x86 and uses assembly, so is architecture specific
+	// Because this uses assembly, cross compiling will not work here.
 	{
 		name:  "basic-cpp-jit",
 		src:   "./src/basic-cpp-jit.cpp",
@@ -283,12 +289,28 @@ var cppBuildVariants = []Variant{
 	},
 }
 
+// TODO(sylfrena): Add Build() for this
+var cppBuildVariantsArm64 = []Variant{
+	// Variants with Pointer Authentication (only available for Arm64)
+	// This may not work with cross-compilation.
+	{
+		name:  "basic-cpp-pac-leaf",
+		src:   "./src/basic-cpp.cpp",
+		flags: []string{"-g", "-fno-PIE", "-no-pie", "-mbranch-protection=pac-ret+leaf"},
+	},
+	{
+		name:  "basic-cpp-pac-bti",
+		src:   "./src/basic-cpp.cpp",
+		flags: []string{"-g", "-fno-PIE", "-no-pie", "-mbranch-protection=pac-ret+bti"},
+	},
+}
+
 // Cpp builds all the C binaries.
 func (Build) Cpp() error {
 	mg.Deps(dirs)
 
 	var errs error
-	for _, vr := range cppBuildVariants {
+	for _, vr := range cppBuildVariantsCommon {
 		if err := buildCpp(host, vr.src, vr.name, vr.flags...); err != nil {
 			errs = errors.Join(errs, err)
 		}
@@ -309,7 +331,7 @@ func (Build) Cross() error {
 				errs = errors.Join(errs, err)
 			}
 		}
-		for _, vr := range cppBuildVariants {
+		for _, vr := range cppBuildVariantsCommon {
 			if err := buildCpp(target, vr.src, vr.name, vr.flags...); err != nil {
 				errs = errors.Join(errs, err)
 			}
