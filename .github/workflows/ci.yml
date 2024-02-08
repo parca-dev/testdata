@@ -13,4 +13,4 @@ jobs:
         with:
           verb: call
           module: ci
-          args: run --src "."
+          args: validate
