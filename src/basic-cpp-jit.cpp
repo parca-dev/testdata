@@ -155,7 +155,8 @@ int main() {
   unsigned long long jit2_last_addr = (unsigned long long)mem;
 
   // We are done writing code, let's not make it writable anymore.
-  mprotect(mem_start, jit_size, PROT_EXEC);
+  // Note: The 'PROT_READ' is necessary when compiling with Zig, else it segfaults.
+  mprotect(mem_start, jit_size, PROT_READ | PROT_EXEC);
 
   // Write perfmap so perf can symbolize the jitted functions.
   //
