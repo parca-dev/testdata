@@ -200,6 +200,16 @@ func (Build) Go() error {
 			errs = errors.Join(errs, err)
 		}
 	}
+	for _, vr := range cppBuildVariantsArm64 {
+		if err := buildCpp(host, vr.src, vr.name, vr.flags...); err != nil {
+			errs = errors.Join(errs, err)
+		}
+	}
+	for _, vr := range cppBuildVariantsX86 {
+		if err := buildCpp(host, vr.src, vr.name, vr.flags...); err != nil {
+			errs = errors.Join(errs, err)
+		}
+	}
 
 	return errs
 }
@@ -311,6 +321,16 @@ func (Build) Cpp() error {
 
 	var errs error
 	for _, vr := range cppBuildVariantsCommon {
+		if err := buildCpp(host, vr.src, vr.name, vr.flags...); err != nil {
+			errs = errors.Join(errs, err)
+		}
+	}
+	for _, vr := range cppBuildVariantsArm64 {
+		if err := buildCpp(host, vr.src, vr.name, vr.flags...); err != nil {
+			errs = errors.Join(errs, err)
+		}
+	}
+	for _, vr := range cppBuildVariantsX86 {
 		if err := buildCpp(host, vr.src, vr.name, vr.flags...); err != nil {
 			errs = errors.Join(errs, err)
 		}
